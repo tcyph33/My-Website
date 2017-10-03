@@ -1,0 +1,469 @@
+body
+{
+    min-width: 1024px;
+}
+
+#container
+{
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+#bkgd
+{
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+}
+
+.background
+{
+    float: left;
+    z-index: 0;
+    width: 50%;
+    height: inherit;
+    background-repeat: no-repeat;
+}
+
+#bkgd_left
+{
+    float: left;
+    top: -650px;
+    background-image: url(../imgs/cadets.jpg);
+    background-position: 60% 30%;
+    background-size: cover;
+}
+
+#bkgd_right
+{
+    float: left;
+    top:-530px;
+    background-image: url(../imgs/trumpet.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 705px)
+{
+    #bkgd_right
+    {
+        display: none;
+    }
+
+    #bkgd_left
+    {
+        width: 100%;
+    }
+}
+
+#nav
+{
+    z-index: 300;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(50, 130, 40);
+    position: fixed;
+}
+
+#logo
+{
+    float: left;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 16px;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+
+#nav_buttons
+{
+    width: 500px;
+    height: 75px;
+    margin-left: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#nav_buttons li
+{
+    list-style: none;
+    display: inline;
+    height: 75px;
+    margin-left: 8%;
+    top: 22px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#nav_buttons a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#nav_buttons a:hover
+{
+    color: #999;
+    font-weight: bold;
+}
+
+.active
+{
+    color: #999;
+}
+
+#header
+{
+    z-index: 200;
+    width: 100%;
+    height: 600px;
+    background-image: url(../imgs/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 10%;
+}
+
+#bio
+{
+    width: 400px;
+    height: 400px;
+    top: 140px;
+    left: 15%;
+    background: rgba(50, 130, 40, .75);
+    border-radius: 50%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    animation: slide_in;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+#bio h1
+{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    top: 30px;
+    text-align: center;
+}
+
+#bio p
+{
+    width: 320px;
+    top: 53px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#subtitle_bar
+{
+    z-index: 200;
+    width: 100%;
+    height: 75px;
+    background: rgb(50, 130, 40);
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 5px;
+    background: #88bb77;
+}
+
+#content
+{
+    z-index: 100;
+    width: 100%;
+    height: 400px;
+}
+
+.activities
+{
+    float: left;
+    z-index: 100;
+    height: 400px;
+    width: 33.33333%;
+}
+
+/*CSS for left content box*/
+
+#left_content
+{
+    z-index: 200;
+    background: rgba(0,0,0,.6);
+    color: white;
+}
+
+#left_content a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#cadet_logo
+{
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#cadet_logo img
+{
+    width: inherit;
+    height: inherit;
+}
+
+#left_content h1
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+#left_content h2
+{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#show
+{
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 3px;
+}
+
+/*CSS for middle content box */
+
+#middle_content
+{
+    background: #333;
+    color: white;
+    border-left: 5px solid #88bb77;
+    border-right: 5px solid #88bb77;
+}
+
+#verse
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+}
+
+#reference
+{
+    width: 250px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 8%;
+    font-family: 'Tangerine', cursive;
+}
+
+.bible_stuff
+{
+    visibility: hidden;
+}
+
+/*CSS for right content box */
+#right_content
+{
+    z-index: 200;
+    background: rgba(0,0,0,.6);
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#right_content h1
+{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+#right_content ul
+{
+    margin-top: 30px;
+}
+
+#right_content li
+{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* CSS for bottom section */
+
+#interests
+{
+    clear: both;
+    z-index: 200;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #88bb77;
+    background: #88bb77;
+}
+
+#interests h1
+{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#interest_content
+{
+    width: 80%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#interest_left
+{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+#interest_right
+{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.other_interest
+{
+    width: 90%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image
+{
+    height: 100%;
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+#soccer
+{
+    height: 180px;
+    width: 180px;
+    margin-top: 10px;
+    left: 10px;
+}
+
+#starwars
+{
+    height: 200px;
+    width: 200px;
+}
+
+#phone
+{
+    height: 180px;
+    width: 95px;
+    left: 52.5px;
+    margin-top: 10px;
+}
+
+#starwars_entertainment
+{
+    min-width: 400px;
+}
+
+#computer_interest
+{
+    min-width: 375px;
+}
+
+.description h2
+{
+    top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.descriptionpara
+{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    visibility: hidden;
+}
+
+#footer
+{
+    z-index: 200;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    background: #8b7;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/******* CSS Animations ********/
+
+@keyframes slide_in
+{
+    from {top: 120px; color: rgba(255, 255, 255, 0);}
+    to {top: 140px; color: rgba(255, 255, 255, 1);}
+}
+
+@keyframes fade_in
+{
+    from {opacity: 0;}
+    to {visibility: visible; opacity: 1;}
+}
+
+.start
+{
+    animation: fade_in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    visibility: visible;
+}
+
+/*
+FONTS
+font-family: 'Great Vibes', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Tangerine', cursive;
+*/
