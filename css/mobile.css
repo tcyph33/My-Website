@@ -15,9 +15,18 @@
     margin-left: 2%;
 }
 
+#nav_buttons
+{
+    width: 80%;
+    margin-left: auto;
+    text-align: right;
+}
+
 #nav_buttons li
 {
     top: 30%;
+    margin-right: 2%;
+    margin-left: 5%;
 }
 
 
