@@ -58,7 +58,6 @@
     height: 500px;
     margin-left: auto;
     margin-top: 30px;
-    overflow: hidden;
 }
 
 .course_title
@@ -163,7 +162,6 @@
     height: auto;
     margin-left: auto;
     margin-top: 30px;
-    overflow: hidden;
 }
 
 #other_content h3
