@@ -43,7 +43,7 @@ function start_anim(){
 
 //Animation for CSIS 315 descriptions
 $(function() {
-	var objectPosition = $('#otherwork').offset().top - window.innerHeight;
+	var objectPosition = $('#capstone').offset().top - window.innerHeight;
     var eventOccured = false;
     $(window).scroll(function(){
 
