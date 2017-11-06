@@ -12,7 +12,6 @@
     width: inherit;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 1000%;
 }
 
 #reference_text
@@ -21,7 +20,6 @@
     width: 100%;
     margin-top: 10%;
     margin-left: 0;
-    font-size: 800%;
     text-align: center;
 }
 
@@ -34,7 +32,6 @@
 {
     margin-left: 0%;
     padding-left: 0%;
-    font-size: 800%;
     border-left: none;
     border-bottom: 100% solid #555;
     text-align: center;
@@ -57,7 +54,6 @@
 .course_title
 {
     width: 100%;
-    font-size: 500%;
     text-align: center;
     margin-bottom: 10%;
     margin-top: 5%;
@@ -75,7 +71,7 @@
 .project_img
 {
     width: 90%;
-    height: 70em;
+    height: 100%;
     margin-top: 5%;
 }
 
@@ -94,7 +90,6 @@
 .project_description h2
 {
     margin-top: 10%;
-    font-size: 300%;
 }
 
 .project_description_p
@@ -102,7 +97,6 @@
     padding: 10%;
     padding-top: 5%;
     width: 100%;
-    font-size: 200%;
     visibility: visible;
     animation-duration: 0s;
 }
@@ -134,33 +128,24 @@
 .more_text
 {
     margin-top: 2%;
-    font-size: 300%;
 }
 
 #otherwork
 {
-    height: auto;
     margin-top: 10%;
 }
 
 #other_content
 {
+    float: clear;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-left: 0;
-    margin-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
     text-align: center;
 }
 
-#other_content h3
-{
-    margin-bottom: 10%;
-    font-size: 600%;
-}
 
 #footer
 {
-    margin-top: 0%;
+    margin-top: 0;
 }

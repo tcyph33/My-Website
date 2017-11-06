@@ -1,8 +1,3 @@
-body
-{
-    min-width: 100%;
-}
-
 #bkgd
 {
     display: none;
@@ -10,47 +5,44 @@ body
 
 #nav
 {
-    height: 3em;
-    font-size: 300%;
+    height: auto;
     position: relative;
 }
 
 #logo
 {
-    font-size: 200%;
+    margin-top: 2%;
     margin-left: 2%;
 }
+
 #nav_buttons
 {
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    text-align: right;
 }
 
 #nav_buttons li
 {
-    font-size: 130%;
+    top: 30%;
+    margin-right: 2%;
     margin-left: 5%;
-    top: 50%;
 }
 
-#nav_buttons a:hover
-{
-    color: white;
-    font-weight: normal;
-}
+
 
 #header
 {
     width: 100%;
     height: 100%;
-    top: 0%;
+    top: 0;
     background-position: 81% -13%;
 }
 
 #bio
 {
     width: 100%;
-    height: 400%;
-    top: 0%;
+    top: 0;
     left: 0%;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -64,8 +56,6 @@ body
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 850%;
-    top: 0%;
     text-align: center;
     animation: fade_in;
     animation-duration: 1.3s;
@@ -79,7 +69,6 @@ body
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 380%;
     text-align: justify;
     line-height: 150%;
     animation: fade_in;
@@ -87,65 +76,30 @@ body
     animation-timing-function: ease-in;
 }
 
-#subtitle_bar
-{
-    width: 100%;
-    height: 100%;
-    font-size: 800%;
-    padding-top: 1%;
-    letter-spacing: 3%;
-}
-
 #content
 {
     width: 100%;
-    height: 900%;
 }
 
 .activities
 {
     width: 100%;
-    height: 300%;
+    height: 400px;
+}
 
+#left_content
+{
+    background-image: url("../imgs/cadets_mobile.jpg");
+    background-position: bottom;
 }
 
 #cadet_logo
 {
-    width: 80%;
-    height: 50%;
-    left: 5%;
     margin-top: 10%;
+    width: 300px;
+    height: 100px;
 }
 
-#cadet_logo img
-{
-    width: inherit;
-    height: inherit;
-}
-
-#left_content h1
-{
-    margin-top: 8%;
-    font-size: 400%;
-}
-
-#left_content h2
-{
-    margin-top: 8%;
-    font-size: 300%;
-}
-
-#show
-{
-    width: 50%;
-    height: 40%;
-    margin-top: 8%;
-    margin-bottom: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 300%;
-    border-radius: 1%;
-}
 
 #middle_content
 {
@@ -158,42 +112,10 @@ body
    visibility: visible;
 }
 
-#verse
+#right_content
 {
-    width: 80%;
-    margin-top: 10%;
-    font-size: 800%;
-    line-height: 100%;
+    background-image: url("../imgs/trumpet_mobile.jpg");
 }
-
-#reference
-{
-    font-size: 800%;
-    margin-bottom: 10%;
-    width: 100%;
-    text-align: center;
-}
-
-
-#right_content h1
-{
-    font-size: 500%;
-    margin-top: 10%
-}
-
-#right_content ul
-{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#right_content li
-{
-    text-align: center;
-    margin-top: 10%;
-    font-size: 350%;
-}
-
 
 #interests
 {
@@ -201,16 +123,9 @@ body
     height: auto;
 }
 
-#interests h1
-{
-    font-size: 800%;
-}
-
 #interest_content
 {
     width: 100%;
-    height: auto;
-    margin-top: 10%;
 }
 
 #interest_left
@@ -226,7 +141,7 @@ body
 .other_interest
 {
     width: 100%;
-    height: 20em;
+    height: 15em;
     background: #88bb77;
 }
 
@@ -265,15 +180,10 @@ body
     width: 60%;
 }
 
-.description h2
-{
-    font-size: 400%;
-}
 
 .descriptionpara
 {
     margin-top: 10%;
-    font-size: 200%;
     visibility: visible;
     animation-duration: 0s;
 }
