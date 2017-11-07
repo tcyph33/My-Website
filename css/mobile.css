@@ -109,6 +109,12 @@ body
 
 }
 
+#left_content
+{
+    background-image: url(../imgs/cadets_mobile.jpg);
+    background-position: bottom;
+}
+
 #cadet_logo
 {
     width: 80%;
@@ -174,6 +180,11 @@ body
     text-align: center;
 }
 
+#right_content
+{
+    background-image: url(../imgs/trumpet_mobile.jpg);
+    background-size: cover;
+}
 
 #right_content h1
 {
