@@ -3,192 +3,190 @@
     background: #88bb77;
 }
 
-#bibleverse
+#BibleVerseWrapper
 {
-    height: 400px;
-    padding-top: 100px;
-    animation: fade_in;
-    animation-duration: 1.3s;
-    animation-timing-function: ease-in;
+    height: 100vh;
+    width: 100%;
+    /* The size of the nav */
+    padding-top: 75px;
+    background: #0E252B;
 }
 
-#verse_text
+#BibleVerse
 {
-    height: 175px;
+    position: fixed;
+    left: 18%;
+    margin-top: 10%;
+    padding: 25px;
+    border: 3px solid gold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px gold inset;
+    animation: fade_in;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+}
+
+#VerseText
+{
+    height: auto;
     width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    /* Make text appear centered because of font */
+    left: -15px;
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
     font-family: 'Tangerine', cursive;
 }
 
-#reference_text
+#ReferenceText
 {
     height: 60px;
     width: 300px;
     margin-left: 55%;
     margin-top: 20px;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Tangerine', cursive;
+    animation: fade_in;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
 }
 
-#coursework
+#Pong
 {
+    background: #888;
+    padding: 30px;
+}
+
+#PongTitle
+{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+}
+
+#GameBoard
+{
+    width: 800px;
     height: auto;
-    margin-top: 30px;
-}
-
-.title
-{
-    margin-left: 15%;
-    padding-left: 5px;
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    border-left: 5px solid #555;
-    border-bottom: 5px solid #555;
-}
-
-.course
-{
-    width: 80%;
-    height: 500px;
-    margin-left: auto;
-    margin-top: 30px;
-    overflow: hidden;
-}
-
-.course_title
-{
-    float: left;
-    width: 120px;
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 30px;
-}
-
-.course_project
-{
-    float: left;
-    width: 300px;
-    height: 500px;
-    margin-left: 30px;
-    border: 2px solid black;
-}
-
-.project_img
-{
-    width: 280px;
-    height: 300px;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.project_img img
+#MoreTitle
 {
-    width: 280px;
-    height: 300px;
-}
-
-.project_description
-{
-    width: 300px;
-    height: 170px;
-}
-
-.project_description h2
-{
-    margin-top: 20px;
+    height: 200px;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-variant: small-caps;
     color: white;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+    /* Matches the #Pong background */
+    background: #888;
 }
 
-.project_description_p
+.WorkContainer
 {
-    padding: 10px;
-    width: 298px;
-    margin-top: 10px;
-    color: black;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 15px;
-    visibility: hidden;
+    background: #88BB77
 }
 
-.more_projects
+.WorkContainer, .WorkContainerOverlay
 {
-    float: left;
-    width: 100px;
-    height: 150px;
-    margin-left: 100px;
-    margin-top: 175px;
-}
-
-.plus_sign
-{
-    width: 100px;
-    height: 100px;
-}
-
-.plus_sign img
-{
-    width: 100px;
-    height: 100px;
-}
-
-.more_text
-{
-    margin-top: 15px;
-    color: black;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-}
-
-#otherwork
-{
-    height: auto;
-    margin-top: 60px;
-}
-
-#other_content
-{
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-top: 30px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
 }
 
-#other_content h3
+.image, .image img, .imageOverlay, .imageOverlay .imgOverlay
 {
-    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.image, .imageOverlay
+{
+    overflow: hidden;
+    position: absolute;
+    /* arctan(H / W) = Xdeg
+    * need to skew by 90deg - Xdeg = degToSkewX
+    * If I ever switch to SCSS I can ut a calculation as
+    * skew instead of the hard number.
+    */
+    transform: skewX(-55.98deg);
+    transition: .2s;
+}
+
+.image:first-child, .imageOverlay:first-child
+{
+    right: 20%;
+    transform-origin: 100% 0;
+}
+
+.image:last-child, .imageOverlay:last-child
+{
+    left: 20%;
+    transform-origin: 0 100%;
+}
+
+.image img, .imageOverlay .imgOverlay
+{
+  transform: skewX(55.98deg);
+  transform-origin: inherit;
+}
+
+.WorkContainerOverlay
+{
+    top: -600px;
+    margin-bottom: -600px;
+    display: none;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
 }
 
-#footer
+.imageOverlay
 {
-    clear: both;
-    margin-top: 60px;
+    background: black;
+    opacity: .9;
+    display: none;
 }
+
+/* This gets the overlay to line up exactly. */
+.imageOverlay:first-child
+{
+    margin-right: 1.5%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* Places text in the divs. */
+#CapstoneOverlay
+{
+    padding-left: 30%;
+    padding-top: 12%;
+    color: white;
+    font-size: 30px;
+}
+
+#FirstWorkOverlay
+{
+    padding-left: 50%;
+    padding-top: 25%;
+    color: white;
+    font-size: 30px;
+}
+
+
 
 /***** CSS Animations *****/
 /*** Animations defined in stylesheet.css ***/
 
-.start
-{
-    animation: fade_in;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    visibility: visible;
-}
 
 /*
 FONTS

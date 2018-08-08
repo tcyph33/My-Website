@@ -24,6 +24,7 @@
 
     <div id="container">
 
+        <!-- NAVIGATION -->
         <div id="nav">
 
             <div id="logo">TC</div>
@@ -40,95 +41,49 @@
 
         </div>
 
-        <div id="bibleverse">
-            <div id="verse_text">"Whatever you do, work at it with all your heart, as working &nbsp;for the Lord, not for men."</div>
-            <div id="reference_text"> - Colossians 3:23</div>
-        </div>
-
-        <div id="coursework">
-
-            <h1 class="title">Course Work</h1>
-            <div id="csis315" class="course">
-
-                <div class="course_title">CSIS 315</div>
-
-                <a href="http://tylercypher.com/csis315/project03/index.html" target="_blank"><div class="course_project">
-
-                    <div class="project_img"><img src="imgs/project03.PNG" /></div>
-                    <div class="project_description">
-                        <h2>Project 03</h2>
-                        <p class='project_description_p'>This project was to create a website for a group called Green Foundation. I was given a website proposal to follow and meet the specifications given. For some fun, I included a lot of things about the Green Team (It's an inside joke with some of my friends and also better than the Red Team. Feel free to laugh at the content!).</p>
-                    </div>
-
-                    </div></a>
-
-
-                <a href="http://tylercypher.com/csis315/homework10/index.html" target="_blank"><div class="course_project">
-
-                    <div class="project_img"><img src="imgs/homework10.PNG"/></div>
-                    <div class="project_description">
-                        <h2>Homework 10</h2>
-                        <p class='project_description_p'>This assignment was to make a website that requires valid emails and passwords. It was created using example code from the online textbook.</p>
-                    </div>
-
-                    </div></a>
-
-
-                <a href="http://tylercypher.com/csis315/homepage/" target="_blank"><div class="more_projects">
-                    <div class="plus_sign"><img src="imgs/plus_sign.png" /></div>
-                    <div class="more_text">Click For More</div>
-                </div></a>
-
+        <!-- BIBLE VERSE -->
+        <div id="BibleVerseWrapper">
+            <div id="BibleVerse">
+                <div id="VerseText">"Whatever you do, work at it with all your heart, as working &nbsp;for the Lord, not for men."</div>
+                <div id="ReferenceText"> - Colossians 3:23</div>
             </div>
-
-            <!-- Add next course here -->
-
-        </div><!-- End coursework -->
-
-        <!-- Eventually add Professional Work here or above Course Work -->
-
-        <div id="otherwork">
-
-            <div class="title">Other Work</div>
-
-            <div id="for_fun" class="course">
-
-                <div class="course_title">For Fun</div>
-
-                <a href="/downloadable/TicTacToe.zip" download><div class="course_project">
-
-                    <div class="project_img"><img src="imgs/TicTacToe.PNG" /></div>
-                    <div class="project_description">
-                        <h2>Tic Tac Toe</h2>
-                        <p class='project_description_p'>This is my first attempt at creating an Android app. I created this app with the purpose to learn how to use Android Studio to make Android apps. It is not published but is fully functional.</p>
-                    </div>
-
-                    </div></a>
-
-                <a href="index.html"><div class="course_project">
-
-                    <div class="project_img"><img src="imgs/my_website.PNG" /></div>
-                    <div class="project_description">
-                        <h2>This Website</h2>
-                        <p class='project_description_p'>I made this website so that you can see some of my work and get to know me a little better.</p>
-                    </div>
-
-                    </div></a>
-
-                <a href="https://github.com/tcyph33" target="_blank"><div class="more_projects">
-                    <div class="plus_sign"><img src="imgs/plus_sign.png" /></div>
-                    <div class="more_text">Click For More</div>
-                </div></a>
-
-            </div><!-- End for_fun -->
-
-            <div id="other_content">
-
-                <h3>Hopefully adding more soon...</h3>
-
-            </div><!-- End other_content -->
-
         </div>
+
+        <!-- PONG -->
+        <div id="Pong">
+            <h1 id="PongTitle">
+                Work is fun!
+                <br />
+                (FYI, you need a mouse)
+            </h1>
+            <div id="GameBoard">
+                <canvas id="GameCanvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+
+
+        <div id="MoreTitle">
+            Explore More!
+        </div>
+
+        <div class="WorkContainer">
+            <div class="image">
+                <img src="imgs/capstone_landing_page.PNG">
+            </div>
+            <div class="image">
+                <img src="imgs/trumpet.jpg">
+            </div>
+        </div>
+
+        <div class="WorkContainerOverlay">
+            <a href="http://tylercypher.com/capstone/landingpage/" class="imageOverlay">
+                <div id="CapstoneOverlay" class="imgOverlay">Capstone Project Landing Page</div>
+            </a>
+            <a href="http://tylercypher.com/csis315/homepage/" class="imageOverlay">
+                <div id="FirstWorkOverlay" class="imgOverlay">My Very First Works</div>
+            </a>
+        </div>
+
 
         <div id="footer">Made By Me - &copy;2017</div>
 
@@ -137,6 +92,9 @@
     <!-- javascript for animation-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/animation.js" type="text/javascript"></script>
+
+    <!-- SCRIPT FOR PONG -->
+    <script type="text/javascript" src="js/pong_script.js"></script>
 
 </body>
 </html>
