@@ -55,7 +55,7 @@ body
     padding-top: 10%;
     padding-bottom: 10%;
     border-radius: 0%;
-    background: rgba(50, 130, 40, .7);
+    background: rgba(4, 12, 25, .75);
     animation-duration: 0s;
 }
 
@@ -227,7 +227,7 @@ body
 {
     width: 100%;
     height: 20em;
-    background: #88bb77;
+    background: #999999;
 }
 
 #starwars_entertainment

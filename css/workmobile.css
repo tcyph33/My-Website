@@ -1,3 +1,8 @@
+#container
+{
+    height: 0;
+}
+
 #BibleVerse
 {
     width: 96%;
@@ -19,14 +24,28 @@
     font-size: 100px;
 }
 
+/* If a short height, make font sizes smaller to fit better. */
+@media only screen and (max-height: 650px)
+{
+    #BibleVerse
+    {
+        padding-top: 250px;
+    }
+
+    #VerseText
+    {
+        font-size: 90px;
+    }
+
+    #ReferenceText
+    {
+        font-size: 65px;
+    }
+}
+
 #PongTitle
 {
     font-size: 50px;
-}
-
-#GameCanvas
-{
-    height: 300;
 }
 
 #MoreTitle
@@ -34,6 +53,10 @@
     font-size: 100px;
 }
 
+/*
+For some reason, just having this CSS code again allows it to work.
+The code is exactly the same except displays the overlays.
+*/
 .WorkContainer, .WorkContainerOverlay
 {
     overflow: hidden;
@@ -90,8 +113,8 @@
 
 .imageOverlay
 {
-    background: black;
-    opacity: .6;
+    /* Done this way so text is not transparent at all. */
+    background: rgba(0,0,0,.6);
     display: block;
 }
 
@@ -122,6 +145,7 @@ a
     color: white;
     font-size: 30px;
 }
+
 #footer
 {
     margin-top: 0%;
