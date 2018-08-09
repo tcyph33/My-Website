@@ -61,7 +61,7 @@ body
     z-index: 300;
     width: 100%;
     height: 75px;
-    background-color: rgb(50, 130, 40);
+    background-color: #040C19;
     position: fixed;
 }
 
@@ -128,7 +128,8 @@ body
     height: 400px;
     top: 140px;
     left: 15%;
-    background: rgba(50, 130, 40, .75);
+    /* Same color as nav */
+    background: rgba(4, 12, 25, .75);
     border-radius: 50%;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -171,7 +172,7 @@ body
     padding-top: 10px;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 5px;
-    background: #88bb77;
+    background: #999999;
 }
 
 #content
@@ -258,8 +259,8 @@ body
 {
     background: #333;
     color: white;
-    border-left: 5px solid #88bb77;
-    border-right: 5px solid #88bb77;
+    border-left: 5px solid #999999;
+    border-right: 5px solid #999999;
 }
 
 #verse
@@ -325,8 +326,8 @@ body
     z-index: 200;
     width: 100%;
     height: 500px;
-    border: 1px solid #88bb77;
-    background: #88bb77;
+    border: 1px solid #999999;
+    background: #999999;
 }
 
 #interests h1
@@ -433,7 +434,7 @@ body
     width: 100%;
     height: 50px;
     padding-top: 15px;
-    background: #8b7;
+    background: #999999;
     text-align: center;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;

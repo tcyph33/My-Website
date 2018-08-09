@@ -1,6 +1,6 @@
 #container
 {
-    background: #88bb77;
+    background: #040C19;
 }
 
 #BibleVerseWrapper
@@ -9,14 +9,15 @@
     width: 100%;
     /* The size of the nav */
     padding-top: 75px;
-    background: #0E252B;
+    background: #222222;
 }
 
 #BibleVerse
 {
     position: fixed;
-    left: 18%;
-    margin-top: 10%;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
     padding: 25px;
     border: 3px solid gold;
     border-radius: 10px;
@@ -28,7 +29,6 @@
 
 #VerseText
 {
-    height: auto;
     width: 900px;
     /* Make text appear centered because of font */
     left: -15px;
@@ -54,7 +54,7 @@
 
 #Pong
 {
-    background: #888;
+    background: #999999;
     padding: 30px;
 }
 
@@ -85,12 +85,12 @@
     font-variant: small-caps;
     color: white;
     /* Matches the #Pong background */
-    background: #888;
+    background: #999999;
 }
 
 .WorkContainer
 {
-    background: #88BB77
+    background: #040C19;
 }
 
 .WorkContainer, .WorkContainerOverlay
@@ -182,7 +182,10 @@ a
     font-size: 30px;
 }
 
-
+#footer
+{
+    background: #040C19;
+}
 
 /***** CSS Animations *****/
 /*** Animations defined in stylesheet.css ***/
