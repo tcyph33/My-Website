@@ -1,0 +1,194 @@
+#bkgd
+{
+    display: none;
+}
+
+#nav
+{
+    height: auto;
+    position: relative;
+}
+
+#logo
+{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#nav_buttons
+{
+    width: 80%;
+    margin-left: auto;
+    text-align: right;
+}
+
+#nav_buttons li
+{
+    top: 30%;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+
+
+#header
+{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-position: 81% -13%;
+}
+
+#bio
+{
+    width: 100%;
+    top: 0;
+    left: 0%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 0%;
+    background: rgba(50, 130, 40, .7);
+    animation-duration: 0s;
+}
+
+#bio h1
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    animation: fade_in;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in;
+}
+
+#bio p
+{
+    width: 80%;
+    top: 0%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 150%;
+    animation: fade_in;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in;
+}
+
+#content
+{
+    width: 100%;
+}
+
+.activities
+{
+    width: 100%;
+    height: 400px;
+}
+
+#left_content
+{
+    background-image: url("../imgs/cadets_mobile.jpg");
+    background-position: bottom;
+}
+
+#cadet_logo
+{
+    margin-top: 10%;
+    width: 300px;
+    height: 100px;
+}
+
+
+#middle_content
+{
+   border: none;
+}
+
+.bible_stuff
+{
+   animation: none;
+   visibility: visible;
+}
+
+#right_content
+{
+    background-image: url("../imgs/trumpet_mobile.jpg");
+}
+
+#interests
+{
+    width: 100%;
+    height: auto;
+}
+
+#interest_content
+{
+    width: 100%;
+}
+
+#interest_left
+{
+    width: 100%;
+}
+
+#interest_right
+{
+    width: 100%;
+}
+
+.other_interest
+{
+    width: 100%;
+    height: 15em;
+    background: #88bb77;
+}
+
+#starwars_entertainment
+{
+    min-width: 0;
+}
+
+.image
+{
+    height: 100%;
+    width: 30%;
+}
+
+#soccer
+{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+#starwars
+{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+#phone
+{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.description
+{
+    float: left;
+    width: 60%;
+}
+
+
+.descriptionpara
+{
+    margin-top: 10%;
+    visibility: visible;
+    animation-duration: 0s;
+}
+
+#footer
+{
+    float: left;
+}
