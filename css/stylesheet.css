@@ -111,6 +111,16 @@ body
     color: #999;
 }
 
+#menu_icon
+{
+    display: none;
+}
+
+#drop_menu
+{
+    display: none;
+}
+
 #header
 {
     z-index: 200;

@@ -13,6 +13,7 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/stylesheet.css" rel="stylesheet" />
     <link href="css/work.css" rel="stylesheet" />
+    <link href="css/mobile.css" rel="stylesheet" media="only screen and (max-width: 800px)" />
     <link href="css/mobile.css" rel="stylesheet" media="only screen and (max-device-width: 800px)" />
     <link href="css/workmobile.css" rel="stylesheet" media="only screen and (max-device-width: 800px)" />
 
@@ -38,6 +39,15 @@
                 <a href="https://www.facebook.com/tyler.cypher.5" target="_blank"><li>Stalk Me</li></a>
 
             </ul>
+
+            <!-- drop menu html for small screens -->
+            <img id="menu_icon" class="upright" src="imgs/menu_icon.png" />
+            <div id="drop_menu">
+                <a href="index.html"><button class="menu_item">About</button></a>
+                <a href="work.html"><button class="menu_item">Work</button></a>
+                <a href="https://www.facebook.com/tyler.cypher.5" target="_blank"><button class="menu_item">Stalk Me</button></a>
+            </div>
+            <!-- End drop menu html -->
 
         </div>
 
@@ -89,9 +99,10 @@
 
     </div><!-- End container -->
 
-    <!-- javascript for animation-->
+    <!-- javascript-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/work_animation.js" type="text/javascript"></script>
+    <script src="js/drop_down_menu.js" type="text/javascript"></script>
 
     <!-- SCRIPT FOR PONG -->
     <script type="text/javascript" src="js/pong_script.js"></script>
